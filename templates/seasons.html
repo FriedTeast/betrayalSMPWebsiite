@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block PageTitle %}Seasons | SMP{% endblock %}
+
+{% block Content %}
+
+<div class="banner">
+  <img src="{{ url_for('static', filename='LOGO_2.png')}}" width="100%" height="500px">
+</div>  
+
+<div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='ShortLogo.png')}}" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Season 1 | The Beginning</h5>
+      <p class="card-text">The start of a small SMP with barely any members with a small community of new creators.</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+
+{% endblock %}

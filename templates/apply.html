@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block PageTitle %}Application | SMP{% endblock %}
+
+{% block Content %}
+
+<div class="banner">
+    <img src="{{ url_for('static', filename='LOGO_2.png')}}" width="100%" height="500px">
+</div>
+
+<form onsubmit="sendApplication(event)">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputUsername">Minecraft Username</label>
+        <input type="text" class="form-control" id="inputUsername" placeholder="FriedToastMC">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputDiscord">Discord Username</label>
+        <input type="text" class="form-control" id="inputDiscord" placeholder="FriedToastTTV">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputChannel">Channel</label>
+      <input type="text" class="form-control" id="inputChannel" placeholder="youtube.com/@friedtoastmc">
+    </div>
+    <div class="form-group">
+      <label for="inputChannel2">Twitter</label>
+      <input type="text" class="form-control" id="inputChannel2" placeholder="twitter.com/@friedtoastmc">
+    </div>
+    <div class="form-group">
+        <label for="inputIntro">Introduction Video</label>
+        <input type="text" class="form-control" id="inputIntro" placeholder="https://youtu.be/dQw4w9WgXcQ?si=HCbJ-zWh9q7PTNbG">
+      </div>
+    <button type="submit" class="btn btn-success">Apply Now!</button>
+  </form>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='apply.js')}}"></script>
+{% endblock %}
