@@ -19,6 +19,10 @@ def ip():
 def application():
     return render_template("apply.html")
 
+@views.route("/updates/development")
+def development():
+    return render_template("development.html")
+
 @views.route("/updates/seasons")
 def seasons():
     return render_template("seasons.html")
