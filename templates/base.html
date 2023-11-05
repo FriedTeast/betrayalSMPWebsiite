@@ -7,7 +7,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/home">
+        <a class="navbar-brand" href="/">
             <img src="https://cdn.discordapp.com/attachments/1097070925163286589/1170467164273246248/ShortLogo.png?ex=6559257e&is=6546b07e&hm=6f10c93dd95fac7b2443df40f8e50e8ff5eec0cfaf98c89fa2fd5f61a70ac48a&" width="50" height="66" class="d-inline-block align-top" alt="">
           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,12 +15,12 @@
         </button> 
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            {% if request.path == "/home" %}
+            {% if request.path == "/" %}
             <li class="nav-item active">
-            {% elif request.path != "/home" %}
+            {% elif request.path != "/" %}
             <li class="nav-item">
             {% endif %}
-              <a class="nav-link" href="/home">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             {% if request.path == "/about" %}
             <li class="nav-item active">
